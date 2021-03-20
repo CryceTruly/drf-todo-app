@@ -13,4 +13,5 @@ install:
 script:
     -  coverage run manage.py test && coverage report && coverage xml
 after_success:
-    - codecov
+    - coveralls
+    
